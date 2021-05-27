@@ -1,0 +1,510 @@
+/* COMMON CSS STARTS */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+    line-height: 0.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+ul,
+ol,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+/* COMMON CSS ENDS */
+/*---------- Navbar part css goes here -------------*/
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+	
+	padding: 0;
+    border-bottom: 1px solid rgba(254, 199, 0, 0.2);
+}
+.navbar-brand {
+	padding: 0;
+}
+.navbar-expand-lg .navbar-nav .nav-item {
+    padding: 0 16px;
+
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    transition: all linear .5s;
+    line-height: 100px;
+    position: relative;
+}
+.navbar-expand-lg .navbar-nav .nav-link::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #fec600;
+    bottom: -1.5px;
+    left: 0;
+    opacity: 0;
+    transition: all linear .5s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover::before {
+    opacity: 1;
+    width: 100%;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #fec600;
+}
+
+/*---------- Banner part css goes here -------------*/
+#banner {
+    position: relative;
+}
+#banner i {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    font-size: 24px;
+    color: #1c1416;
+    transition: all linear .5s;
+    
+}
+#banner i:hover {
+    background-color: #fec600;
+}
+#banner .left {
+    
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+#banner .right {
+    
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+.banner_item {
+    background-repeat: no-repeat;
+    background-size: cover!important;
+    background-position: center!important;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+}
+.banner_item::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.60);
+}
+.banner-content {
+    height: 100vh;
+    position: relative;
+    z-index: 99;
+}
+.banner-text h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 400;
+    padding-bottom: 21px;
+}
+.banner-text h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 55px;
+    color: #fec600;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    
+}
+.banner-text p {
+    font-family: 'Open Sans', sans-serif;
+    color: #f1f1f1;
+    font-weight: 400;
+    line-height: 24px;
+    padding:0 30px;
+    padding-bottom: 60px;
+    
+}
+.banner-text a {
+    font-family: 'Raleway', sans-serif;
+    color: #ffff;
+    font-weight: 500;
+    padding:20px 20px;
+    font-size: 16px;
+    border:1px solid #fff;
+    text-transform: uppercase;
+    margin:0 10px;
+    transition: all linear .5s;
+}
+.banner-text a.ancor-2 {
+    padding: 20px 34px;
+}
+.banner-text a.ancor-1 {
+    background-color: #fec600;
+    color: #222;
+    border-color: #fec600;
+    transition: all linear .5s;
+
+}
+.banner-text a:hover {
+    background-color: #fec600;
+    color: #222;
+    border-color: #fec600;
+    
+
+}
+.banner-text a.ancor-1:hover {
+    border:1px solid #fff;
+    color: #ffff;
+    background-color: transparent;
+}
+
+
+/* --------- About part css goes here----------*/
+.about_text {
+    margin-bottom: 60px;
+}
+
+.about_text h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #111111;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+.about_text p {
+    font-family: 'Open Sans', sans-serif;
+    color: #353535;
+    font-weight: 400;
+    line-height: 14px;
+    line-height: 24px;
+    padding: 0 35px;
+}
+.about-item {
+    background-color: #eeeeee;
+    padding: 40px 51px;
+    transition: all linear .5s;
+    
+    
+}
+.about-item:hover {
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.3));
+
+}
+.about-item h2{
+	font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #111111;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.about-item p {
+	font-family: 'Open Sans', sans-serif;
+	color: #353535;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+    
+	
+}
+
+
+
+.aboutitem_1 {
+    position: relative;
+    z-index: 9;
+   
+}
+.aboutitem_1:hover::after {
+    background-color: #fec600;
+}
+.aboutitem_1::before {
+    position: absolute;
+    content: '';
+    width: 38px;
+    height: 38px;
+    background-color: #eeeeee;
+    left: 50%;
+    bottom: -19px;
+    transform: translateX(-50%)rotate(45deg);
+}
+.aboutitem_1::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    bottom: -55px;
+    left: 50%;
+    background-color: #353535;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: all linear .5s;
+
+}
+.aboutitem_2 {
+	position: relative;
+	margin: 115px -7px 0 0;
+    z-index: 9;
+    
+}
+.aboutitem_2:hover::after {
+    background-color: #fec600;
+}
+.aboutitem_2::before {
+    position: absolute;
+    content: '';
+    width: 38px;
+    height: 38px;
+    background-color: #eeeeee;
+    top: 50%;
+    right: -19px;
+    transform: translateY(-50%)rotate(45deg);
+}
+.aboutitem_2::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    right: -55px;
+    top: 50%;
+    background-color: #353535;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: all linear .5s;
+
+}
+.aboutitem_3 {
+    position: relative;
+    margin-top: 115px;
+    margin-left: -9px;
+    
+}
+.aboutitem_3:hover::after {
+    background-color: #fec600;
+}
+.aboutitem_3::before {
+    position: absolute;
+    content: '';
+    width: 38px;
+    height: 38px;
+    background-color: #eeeeee;
+    top: 50%;
+    left: -19px;
+    transform: translateY(-50%)rotate(45deg);
+}
+.aboutitem_3::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    left: -55px;
+    top: 50%;
+    background-color: #353535;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: all linear .5s;
+   
+
+}
+.aboutitem_4 {
+    position: relative;
+    margin-top: 64px;
+    z-index: 9999;
+    
+}
+.aboutitem_4:hover::after {
+    background-color: #fec600;
+}
+.aboutitem_4::before {
+    position: absolute;
+    content: '';
+    width: 38px;
+    height: 38px;
+    background-color: #eeeeee;
+    top: -19PX;
+    left: 50%;
+    transform: translatex(-50%)rotate(45deg);
+
+}
+.aboutitem_4::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: -55px;
+    left: 50%;
+    background-color: #353535;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: all linear .5s;
+   
+
+}
+
+
+.about-circle {
+    
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    margin-top: 64px;
+    
+    
+}
+
+.about-circle::before {
+    position: absolute;
+    content: '';
+    width: 360px;
+    height: 360px;
+    border: 2px solid #353535;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    
+}
+.about-circle::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+
+
+/*---------portfolio part css goes here ---------*/
+#portfolio {
+    background: url(../Images/p-main.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    position: relative;
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+    
+}
+#portfolio::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    
+
+    
+}
+.portfolio_text h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 35px;
+    text-transform: capitalize;
+    padding-bottom: 25px;
+}
+
+.portfolio_text p {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 14px;
+    line-height: 24px;
+    padding: 0 56px;
+}
+.portfolio_main {
+    position: relative;
+    z-index: 99;
+}
+.port-img {
+    
+    position: relative;
+    margin-bottom: 24px;
+}
+.port_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: all linear .3s;
+}
+.port_overlay a i {
+    width: 40px;
+    height: 40px;
+    background-color: #fec600;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+
+}
+.port-img:hover .port_overlay {
+    height: 100%;
+    opacity: 1;
+}
+.portfolio-slider {
+    padding-top: 60px;
+}
