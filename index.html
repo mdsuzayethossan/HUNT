@@ -5,42 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HUNT_MAIN</title>
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/venobox.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
-<body>
-    <!------------------Navbar part goes here ------------------------>
-    <nav class="navbar navbar-expand-lg">
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+  <!--================== Preloader  ============-->
+  <div class="preloader">
+    <ul class="loader">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+  </ul>
+
+  </div>
+    <!--Navbar part goes here -->
+    <nav class="navbar navbar-expand-lg" id="navbar" >
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="Images/Hunt.png" alt=""></a>
+          <a class="navbar-brand" href="##banner"><img src="Images/Hunt.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa fa-bars"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#banner">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="#about">About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Our Portfolio</a>
+                <a class="nav-link" href="#portfolio">Our Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonial</a>
+                <a class="nav-link" href="#service">Service</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonial</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing Plan</a>
+                <a class="nav-link" href="#pricing">Pricing Plan</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact us</a>
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact us</a>
               </li>
              
              
@@ -49,7 +72,7 @@
           </div>
         </div>
       </nav>
-      <!------------------Banner part goes here ------------------------>
+      <!--==========Banner part goes here =======-->
 
       <section id="banner">
         <i class="fa fa-arrow-left left"></i>
@@ -61,8 +84,11 @@
                   <div class="col-lg-6 m-auto">
                     <div class="banner-content d-flex justify-content-center align-items-center">
                       <div class="banner-text text-center">
-                       <h3>We are Creative</h3>
-                       <h1>Designer</h1>
+                        <h1>
+                          We are Creative<br><br><span class="typed"></span>
+                        </h1>
+                       <!-- <h3>We are Creative</h3>
+                       <h1>Designer</h1> -->
                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
                        <a href="#" class="ancor-1">View More</a>
                        <a href="#" class="ancor-2">Hire Us</a>
@@ -79,8 +105,8 @@
                   <div class="col-lg-6 m-auto">
                     <div class="banner-content d-flex justify-content-center align-items-center">
                       <div class="banner-text text-center">
-                       <h3>We are Creative</h3>
-                       <h1>Designer</h1>
+                       <h1>We are Creative</h1>
+                       <h3>Designer</h3>
                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
                        <a href="#" class="ancor-1">View More</a>
                        <a href="#" class="ancor-2">Hire Us</a>
@@ -97,8 +123,9 @@
                   <div class="col-lg-6 m-auto">
                     <div class="banner-content d-flex justify-content-center align-items-center">
                       <div class="banner-text text-center">
-                       <h3>We are Creative</h3>
-                       <h1>Designer</h1>
+                       
+                       <h1>We are Creative</h1>
+                       <h3>Designer</h3>
                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
                        <a href="#" class="ancor-1">View More</a>
                        <a href="#" class="ancor-2">Hire Us</a>
@@ -112,7 +139,7 @@
          </div>
 
       </section>
-      <!------------------ About part goes here ------------------------>
+      <!--========= About part goes here ============-->
       <section id="about">
         <div class="container">
           <div class="row">
@@ -125,7 +152,7 @@
           </div>
           <div class="row">
              <div class="col-lg-4 m-auto">
-               <div class="about-item aboutitem_1 text-center">
+               <div class="about-item aboutitem_1 text-center wow fadeInDown" data-wow-duration="2.5s">
                  <h2>Who We Are?</h2>
                  <p>Lorem Ipsum is simply dummy text oftheg and typesetting industry. Loremumhaseen the industry's standardmy text ever since the 1500s.</p>
                </div>
@@ -133,7 +160,7 @@
           </div>
           <div class="row">
              <div class="col-lg-4">
-               <div class="about-item aboutitem_2 text-end">
+               <div class="about-item aboutitem_2 text-end wow fadeInLeft" data-wow-duration="2.5s">
                  <h2>What We CAn?</h2>
                  <p>Lorem Ipsum is simply dummy text oftheg and  namtypesetting industry. Loremumhaseen the  my naindustry's standardmy text ever since the 1500s of the end.</p>
                </div>
@@ -148,7 +175,7 @@
 
              
              <div class="col-lg-4">
-               <div class="about-item aboutitem_3 text-start">
+               <div class="about-item aboutitem_3 text-start wow fadeInRight" data-wow-duration="2.5s">
                  <h2>What We Do?</h2>
                  <p>Lorem Ipsum is simply dummy text oftheg and typesetting industry. Loremumhaseen the nmy ustry's standardmy text ever since the my nam end of 1500s.</p>
                </div>
@@ -156,7 +183,7 @@
           </div>
           <div class="row">
             <div class="col-lg-4 m-auto">
-              <div class="about-item aboutitem_4 text-center">
+              <div class="about-item aboutitem_4 text-center wow fadeInDown" data-wow-duration="2.5s">
                 <h2>Who We Are?</h2>
                 <p>Lorem Ipsum is simply dummy text oftheg and typesetting industry. Loremumhaseen the industry's standardmy text ever since the 1500s.</p>
               </div>
@@ -165,6 +192,7 @@
         </div>
 
       </section>
+ <!--==============PORTFOLIO part goes here =============-->      
       <section id="portfolio">
         <div class="container portfolio_main">
           <div class="row">
@@ -195,7 +223,7 @@
                   <img src="Images/p-2.jpg" alt="p-2" class="img-fluid w-100">
                   <div class="port_overlay d-flex justify-content-center align-items-center">
                    
-                    <a class="venobox" data-gall="gallery01" href="Images/p-1.jpg">
+                    <a class="venobox" data-gall="gallery01" href="Images/p-2.jpg">
                       <i class="fa fa-plus"></i>
                   </a>
                     
@@ -210,7 +238,7 @@
                   <img src="Images/p-3.jpg" alt="p-3" class="img-fluid w-100">
                   <div class="port_overlay d-flex justify-content-center align-items-center">
                    
-                    <a class="venobox" data-gall="gallery01" href="Images/p-1.jpg">
+                    <a class="venobox" data-gall="gallery01" href="Images/p-3.jpg">
                       <i class="fa fa-plus"></i>
                   </a>
                     
@@ -221,7 +249,7 @@
                   <img src="Images/p-4.jpg" alt="p-4" class="img-fluid w-100">
                   <div class="port_overlay d-flex justify-content-center align-items-center">
                    
-                    <a class="venobox" data-gall="gallery01" href="Images/p-1.jpg">
+                    <a class="venobox" data-gall="gallery01" href="Images/p-4.jpg">
                       <i class="fa fa-plus"></i>
                   </a>
                     
@@ -236,7 +264,7 @@
                   <img src="Images/p-5.jpg" alt="p-5" class="img-fluid w-100">
                   <div class="port_overlay d-flex justify-content-center align-items-center">
                    
-                    <a class="venobox" data-gall="gallery01" href="Images/p-1.jpg">
+                    <a class="venobox" data-gall="gallery01" href="Images/p-5.jpg">
                       <i class="fa fa-plus"></i>
                   </a>
                     
@@ -247,7 +275,7 @@
                   <img src="Images/p-6.jpg" alt="p-6" class="img-fluid w-100">
                   <div class="port_overlay d-flex justify-content-center align-items-center">
                    
-                    <a class="venobox" data-gall="gallery01" href="Images/p-1.jpg">
+                    <a class="venobox" data-gall="gallery01" href="Images/p-6.jpg">
                       <i class="fa fa-plus"></i>
                   </a>
                     
@@ -262,7 +290,7 @@
                   <img src="Images/p-7.jpg" alt="p-7" class="img-fluid w-100">
                   <div class="port_overlay d-flex justify-content-center align-items-center">
                    
-                    <a class="venobox" data-gall="gallery01" href="Images/p-1.jpg">
+                    <a class="venobox" data-gall="gallery01" href="Images/p-7.jpg">
                       <i class="fa fa-plus"></i>
                   </a>
                     
@@ -273,7 +301,7 @@
                   <img src="Images/p-8.jpg" alt="p-8" class="img-fluid w-100">
                   <div class="port_overlay d-flex justify-content-center align-items-center">
                    
-                    <a class="venobox" data-gall="gallery01" href="Images/p-1.jpg">
+                    <a class="venobox" data-gall="gallery01" href="Images/p-8.jpg">
                       <i class="fa fa-plus"></i>
                   </a>
                     
@@ -282,20 +310,799 @@
                 </div>
               </div>
             </div>
+            <div class="col-lg-3">
+              <div class="port-item">
+                <div class="port-img">
+                  <img src="Images/p-5.jpg" alt="p-5" class="img-fluid w-100">
+                  <div class="port_overlay d-flex justify-content-center align-items-center">
+                   
+                    <a class="venobox" data-gall="gallery01" href="Images/p-5.jpg">
+                      <i class="fa fa-plus"></i>
+                  </a>
+                    
+
+                  </div>
+                </div>
+                <div class="port-img">
+                  <img src="Images/p-6.jpg" alt="p-6" class="img-fluid w-100">
+                  <div class="port_overlay d-flex justify-content-center align-items-center">
+                   
+                    <a class="venobox" data-gall="gallery01" href="Images/p-6.jpg">
+                      <i class="fa fa-plus"></i>
+                  </a>
+                    
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
           </div>
         </div>
 
       </section>
-      <!------------------Navbar part goes here ------------------------>
-      <!------------------Navbar part goes here ------------------------>
-      <!------------------Navbar part goes here ------------------------>
-      <!------------------Navbar part goes here ------------------------>
-      <!------------------Navbar part goes here ------------------------>
-      <!------------------Navbar part goes here ------------------------>
-      <!------------------Navbar part goes here ------------------------>
-      <!------------------Navbar part goes here ------------------------>
-      <!------------------Navbar part goes here ------------------------>
-      <!------------------Navbar part goes here ------------------------>
+      <!--============SERVICE part goes here ============-->
+<section id="service">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 m-auto">
+            <div class="portfolio_text text-center">
+              <h2>Our Services</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loremsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="service_head">
+          <i class="fa fa-chevron-up sup"></i>
+        <i class="fa fa-chevron-down sdown" ></i>
+          <i class="fa fa-chevron-up sup_2"></i>
+        <i class="fa fa-chevron-down sdown_2" ></i>
+        
+        <div class="service_main d-none d-lg-block">
+          <div class="service_item">
+            <div class="row">
+              <div class="col-lg-5 align-self-center">
+                <div class="srvice_left text-end ">
+                  <h2>WEb Design</h2>
+                </div>
+              </div>
+              <div class="col-lg-2  align-self-center">
+                <div class="service_icon m-auto">
+                  <img src="Images/s_icon.png" alt="s_icon" class="img-fluid">
+                </div>
+              </div>
+             <div class="col-lg-5">
+              <div class="service_right">
+                <p>Lorem Ipsum is simply dummy text of the printing and typtting industry. Lorem Ipsum has been the industry's standard y text ever since the 1500s, when an unknown printer took a galleye and scrambled it to make a type specimen book. It has surve nothing is impossible centuries.</p>
+                
+              </div>
+             </div>
+            </div>
+          </div>
+          <div class="service_item">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="service_right2">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typtting industry. Lorem Ipsum has been the industry's standard y text ever since the 1500s, when an unknown printer took a galleye and scrambled it to make a type specimen book. It has surve nothing is impossible centuries.</p>
+                  
+                </div>
+               </div>
+              
+              <div class="col-lg-2  align-self-center">
+                <div class="service_icon_2 m-auto">
+                  <img src="Images/s_icon_1.png" alt="s_icon_1" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-5 align-self-center">
+                <div class="srvice_left text-start ">
+                  <h2>Graphic Design</h2>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+          <div class="service_item">
+            <div class="row">
+              <div class="col-lg-5 align-self-center">
+                <div class="srvice_left text-end ">
+                  <h2>Photography</h2>
+                </div>
+              </div>
+              <div class="col-lg-2  align-self-center">
+                <div class="service_icon m-auto">
+                  <img src="Images/s_icon_2.png" alt="s_icon_2" class="img-fluid">
+                </div>
+              </div>
+             <div class="col-lg-5">
+              <div class="service_right">
+                <p>Lorem Ipsum is simply dummy text of the printing and typtting industry. Lorem Ipsum has been the industry's standard y text ever since the 1500s, when an unknown printer took a galleye and scrambled it to make a type specimen book. It has surve nothing is impossible centuries.</p>
+                
+              </div>
+             </div>
+            </div>
+          </div>
+          <div class="service_item">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="service_right2">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typtting industry. Lorem Ipsum has been the industry's standard y text ever since the 1500s, when an unknown printer took a galleye and scrambled it to make a type specimen book. It has surve nothing is impossible centuries.</p>
+                  
+                </div>
+               </div>
+              
+              <div class="col-lg-2  align-self-center">
+                <div class="service_icon_2 m-auto">
+                  <img src="Images/s_icon_1.png" alt="s_icon_1" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-5 align-self-center">
+                <div class="srvice_left text-start ">
+                  <h2>Graphic Design</h2>
+                </div>
+              </div>
+            
+            </div>
+        </div>
+      </div>
+<!--============== Responsive part goes here ==============-->
+        <div class="service_main_2 d-lg-none">
+          <div class="service_item">
+            <div class="row">
+              <div class="col-lg-5 align-self-center">
+                <div class="srvice_left text-center ">
+                  <h2>WEb Design</h2>
+                </div>
+              </div>
+              <div class="col-lg-2  align-self-center">
+                <div class="service_icon m-auto">
+                  <img src="Images/s_icon.png" alt="s_icon" class="img-fluid">
+                </div>
+              </div>
+             <div class="col-lg-5">
+              <div class="service_right">
+                <p>Lorem Ipsum is simply dummy text of the printing and typtting industry. Lorem Ipsum has been the industry's standard y text ever since the 1500s, when an unknown printer took a galleye and scrambled it to make a type specimen book. It has surve nothing is impossible centuries.</p>
+                
+              </div>
+             </div>
+            </div>
+          </div>
+          <div class="service_item">
+            <div class="row">
+              <div class="col-lg-5 align-self-center">
+                <div class="srvice_left text-center ">
+                  <h2>Graphic Design</h2>
+                </div>
+              </div>
+              <div class="col-lg-2  align-self-center">
+                <div class="service_icon_2 m-auto">
+                  <img src="Images/s_icon_1.png" alt="s_icon_1" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="service_right2">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typtting industry. Lorem Ipsum has been the industry's standard y text ever since the 1500s, when an unknown printer took a galleye and scrambled it to make a type specimen book. It has surve nothing is impossible centuries.</p>
+                  
+                </div>
+               </div>
+            </div>
+          </div>
+          <div class="service_item">
+            <div class="row">
+              <div class="col-lg-5 align-self-center">
+                <div class="srvice_left text-center ">
+                  <h2>Photography</h2>
+                </div>
+              </div>
+              <div class="col-lg-2  align-self-center">
+                <div class="service_icon m-auto">
+                  <img src="Images/s_icon_2.png" alt="s_icon_2" class="img-fluid">
+                </div>
+              </div>
+             <div class="col-lg-5">
+              <div class="service_right">
+                <p>Lorem Ipsum is simply dummy text of the printing and typtting industry. Lorem Ipsum has been the industry's standard y text ever since the 1500s, when an unknown printer took a galleye and scrambled it to make a type specimen book. It has surve nothing is impossible centuries.</p>
+                
+              </div>
+             </div>
+            </div>
+          </div>
+          <div class="service_item">
+            <div class="row">
+              <div class="col-lg-5 align-self-center">
+                <div class="srvice_left text-center ">
+                  <h2>Graphic Design</h2>
+                </div>
+              </div>
+             
+              
+              <div class="col-lg-2  align-self-center">
+                <div class="service_icon_2 m-auto">
+                  <img src="Images/s_icon_1.png" alt="s_icon_1" class="img-fluid">
+                </div>
+              </div>
+             
+              <div class="col-lg-5">
+                <div class="service_right2">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typtting industry. Lorem Ipsum has been the industry's standard y text ever since the 1500s, when an unknown printer took a galleye and scrambled it to make a type specimen book. It has surve nothing is impossible centuries.</p>
+                  
+                </div>
+               </div>
+            
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!--==============Testimonial part goes here ===============-->
+<section id="testimonial">
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-2">
+              <div class="testimonial_head text-center">
+              <i class="fa fa-chevron-up tup"></i>
+              <i class="fa fa-chevron-down tdown" ></i>
+          
+              <div class="testimonial_main">
+              <div class="testimonial_item ti_1">
+              <div class="testimonial_img">
+                <img src="Images/t-4.png" alt="t-1" class="img-fluid">
+                
+              </div>
+              
+              </div>
+              <div class="testimonial_item ti_1">
+              <div class="testimonial_img">
+                <img src="Images/t-5.png" alt="t-1" class="img-fluid">
+                
+              </div>
+              
+              </div>
+              <div class="testimonial_item ti_1">
+              <div class="testimonial_img">
+                <img src="Images/t-6.png" alt="t-1" class="img-fluid">
+                
+              </div>
+              
+              </div>
+              <div class="testimonial_item ti_1">
+              <div class="testimonial_img">
+                <img src="Images/t-4.png" alt="t-1" class="img-fluid">
+                
+              </div>
+              
+              </div>
+              <div class="testimonial_item ti_1">
+              <div class="testimonial_img">
+                <img src="Images/t-5.png" alt="t-1" class="img-fluid">
+                
+              </div>
+              
+              </div>
+              <div class="testimonial_item ti_1">
+              <div class="testimonial_img">
+                <img src="Images/t-6.png" alt="t-1" class="img-fluid">
+                
+              </div>
+              
+              </div>
+              </div>
+              </div>
+            </div>
+            <div class="col-lg-1"></div>
+          
+            <div class="col-lg-9 align-self-center">
+            <div class="testimonial_details m-auto">
+              <div class="testimonial-details_item">
+                <h3>Mahadi Tahsan</h3>
+                <div class="testimonial-details_item_icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half" aria-hidden="true"></i>
+                    
+                </div>
+                <h5>Chairman/CEO</h5>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ardy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type ook. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially changed. orem Ipsum is simply dummy text of the printing.</p>
+                <div class="testimonial_signature text-end">
+                  <span>Mahadi Tahsan</span>
+                </div>
+              </div>
+              <div class="testimonial-details_item">
+                <h3>Mahadi Tahsan</h3>
+                <div class="testimonial-details_item_icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half" aria-hidden="true"></i>
+                    
+                </div>
+                <h5>Chairman/CEO</h5>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ardy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type ook. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially changed. orem Ipsum is simply dummy text of the printing.</p>
+                <div class="testimonial_signature text-end">
+                  <span>Mahadi Tahsan</span>
+                </div>
+              </div>
+              <div class="testimonial-details_item">
+                <h3>Mahadi Tahsan</h3>
+                <div class="testimonial-details_item_icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half" aria-hidden="true"></i>
+                    
+                </div>
+                <h5>Chairman/CEO</h5>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ardy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type ook. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially changed. orem Ipsum is simply dummy text of the printing.</p>
+                <div class="testimonial_signature text-end">
+                  <span>Mahadi Tahsan</span>
+                </div>
+              </div>
+              <div class="testimonial-details_item">
+                <h3>Mahadi Tahsan</h3>
+                <div class="testimonial-details_item_icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half" aria-hidden="true"></i>
+                    
+                </div>
+                <h5>Chairman/CEO</h5>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ardy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type ook. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially changed. orem Ipsum is simply dummy text of the printing.</p>
+                <div class="testimonial_signature text-end">
+                  <span>Mahadi Tahsan</span>
+                </div>
+              </div>
+              <div class="testimonial-details_item">
+                <h3>Mahadi Tahsan</h3>
+                <div class="testimonial-details_item_icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half" aria-hidden="true"></i>
+                    
+                </div>
+                <h5>Chairman/CEO</h5>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ardy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type ook. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially changed. orem Ipsum is simply dummy text of the printing.</p>
+                <div class="testimonial_signature text-end">
+                  <span>Mahadi Tahsan</span>
+                </div>
+              </div>
+              <div class="testimonial-details_item">
+                <h3>Mahadi Tahsan</h3>
+                <div class="testimonial-details_item_icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half" aria-hidden="true"></i>
+                    
+                </div>
+                <h5>Chairman/CEO</h5>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ardy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type ook. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially changed. orem Ipsum is simply dummy text of the printing.</p>
+                <div class="testimonial_signature text-end">
+                  <span>Mahadi Tahsan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+<!--========= pricing part goes here ===========-->
+
+<section id="pricing">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 m-auto">
+        <div class="portfolio_text text-center">
+          <h2>Pricing Plan</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loremsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="pricing_main">
+          <div class="pricing_item wow fadeInLeft" data-wow-duration="2.5s">
+            <div class="silver">
+              <h3>Silver</h3>
+             </div>
+             <div class="silver_price">
+               <div class="silver_text">
+                <h5>$ 29</h5>
+                <h6>Per Month</h6>
+               </div>
+             </div>
+             <div class="aa"><h2>Android Application</h2></div>
+             <div class="ia"><h2>ios Application</h2></div>
+             <div class="uu"><h2>UX/UI Designs</h2></div>
+             <div class="wd"><h2>Wordpress Developer</h2></div>
+             <div class="x"><h2> x</h2></div>
+             <div class="silver_bottom">
+              <h3>Join Now</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="pricing_main">
+          <div class="pricing_item wow fadeInDown" data-wow-duration="2.5s">
+            <div class="silver">
+              <h3>Golden</h3>
+             </div>
+             <div class="silver_price">
+               <div class="silver_text">
+                <h5>$ 69</h5>
+                <h6>Per Month</h6>
+               </div>
+             </div>
+             <div class="aa"><h2>Android Application</h2></div>
+             <div class="ia"><h2>ios Application</h2></div>
+             <div class="uu"><h2>UX/UI Designs</h2></div>
+             <div class="wd"><h2>Wordpress Developer</h2></div>
+             <div class="x"><h2> x</h2></div>
+             <div class="silver_bottom">
+              <h3>Join Now</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="pricing_main">
+          <div class="pricing_item wow fadeInRight" data-wow-duration="2.5s">
+            <div class="silver">
+              <h3>Platinum</h3>
+             </div>
+             <div class="silver_price">
+               <div class="silver_text">
+                <h5>$ 89</h5>
+                <h6>Per Month</h6>
+               </div>
+             </div>
+             <div class="aa"><h2>Android Application</h2></div>
+             <div class="ia"><h2>ios Application</h2></div>
+             <div class="uu"><h2>UX/UI Designs</h2></div>
+             <div class="wd"><h2>Wordpress Develope</h2></div>
+             <div class="x"><h2> HTML v:2.0</h2></div>
+             <div class="silver_bottom">
+              <h3>Join Now</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--========= Counter part goes here ===========-->
+<section>
+ <div class="counter_1" style="background: url(Images/counter.jpg);">
+  <div class="container">
+    <div class="row counter_main">
+      <div class="col-6 col-lg col-md-4">
+        <div class="counter_item">
+          <h3 class="counter">
+            230
+          </h3>
+          <h5>
+            Total Client
+          </h5>
+          
+        </div>
+      </div>
+      <div class="col-6 col-lg col-md-4">
+        <div class="counter_item">
+          <h3 class="counter">
+            330
+          </h3>
+          <h5>
+            Satisfied Clients
+          </h5>
+          
+        </div>
+      </div>
+      <div class="col-6 col-lg col-md-4">
+        <div class="counter_item">
+          <h3 class="counter">
+            130
+          </h3>
+          <h5>
+            Reviewed Client
+          </h5>
+          
+        </div>
+      </div>
+      <div class="col-6 col-lg col-md-4 offset-lg-0 offset-md-2 ">
+        <div class="counter_item">
+          <h3 class="counter">
+            430
+
+          </h3>
+          <h5>
+            Cup of Tea
+          </h5>
+          
+        </div>
+      </div>
+      <div class="col-6 offset-3 offset-md-0 offset-sm-0 offset-lg-0 offset-xl-0  col-lg col-md-4">
+        <div class="counter_item">
+          <h3 class="counter">
+            530
+            
+          </h3>
+          <h5>
+            Milestone Client
+          </h5>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ </div>
+ 
+ 
+</section>
+<!--======== Team part goes here =========-->
+<section id="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 m-auto">
+        <div class="portfolio_text text-center">
+          <h2>Our Team</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loremsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="team_item wow fadeInLeft" data-wow-duration="2.5s">
+          <div class="team_img">
+            <img src="Images/team_1.png" alt="tem_1" class="img-fluid">
+              <div class="team_overly d-flex justify-content-center align-items-center">
+                <div class="search_icon"><a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a></div>
+              </div>
+          </div>
+          <div class="team-text">
+            <h2>Adreeta Nipa</h2>
+            <h3>Founder</h3>
+          </div>
+          <div class="team_icon text-center">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="team_item wow fadeInDown" data-wow-duration="2.5s">
+          <div class="team_img">
+            <img src="Images/team_2.png" alt="tem_1" class="img-fluid">
+              <div class="team_overly d-flex justify-content-center align-items-center">
+                <div class="search_icon"><a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a></div>
+              </div>
+          </div>
+          <div class="team-text">
+            <h2>Ahsan Rana</h2>
+            <h3>Chairman</h3>
+          </div>
+          <div class="team_icon text-center">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="team_item wow fadeInDown" data-wow-duration="2.5s">
+          <div class="team_img">
+            <img src="Images/team_3.png" alt="tem_1" class="img-fluid">
+              <div class="team_overly d-flex justify-content-center align-items-center">
+                <div class="search_icon"><a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a></div>
+              </div>
+          </div>
+          <div class="team-text">
+            <h2>Nadia Rahman</h2>
+            <h3>Senior Member</h3>
+          </div>
+          <div class="team_icon text-center">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="team_item wow fadeInRight" data-wow-duration="2.5s">
+          <div class="team_img">
+            <img src="Images/team_4.png" alt="tem_1" class="img-fluid">
+              <div class="team_overly d-flex justify-content-center align-items-center">
+                <div class="search_icon"><a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a></div>
+              </div>
+          </div>
+          <div class="team-text">
+            <h2>Jhon Smith</h2>
+            <h3>Member</h3>
+          </div>
+          <div class="team_icon text-center">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--========== company part goes here =============-->
+<section id="company"> 
+<div class="company_head">
+  <div class="container">
+    <div class="company_main">
+      <div class="row company_slider">
+        <div class="col ct">
+          <div class="company_item">
+            <img src="Images/theme.png" alt="theme" class="img-fluid">
+          </div>
+        </div>
+        <div class="col ct">
+          <div class="company_item">
+            <img src="Images/3d.png" alt="3d" class="img-fluid">
+          </div>
+        </div>
+        <div class="col ct">
+          <div class="company_item">
+            <img src="Images/aud.png" alt="aud" class="img-fluid">
+          </div>
+        </div>
+        <div class="col ct">
+          <div class="company_item">
+            <img src="Images/code.png" alt="code" class="img-fluid">
+          </div>
+        </div>
+        <div class="col ct">
+          <div class="company_item">
+            <img src="Images/grap.png" alt="grap" class="img-fluid">
+          </div>
+        </div>
+        <div class="col ct">
+          <div class="company_item">
+            <img src="Images/grap.png" alt="grap" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+<!--===========footer part goes here ==========-->
+<a href="#" class="back_to_top" id="back_to_top">
+  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+</a>
+<footer id="footer">
+  <div class="footer_main">
+      <div class="footer_logo text-center">
+        <img src="Images/Hunt.png" alt="">
+      </div>
+      <div class="footer_border"></div>
+      <div class="container">
+        <div class="row footer_item_main">
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer_item">
+              <div class="footer_item_icon_main">
+                <div class="footer_item_icon">
+                  <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                  
+                </div>
+              </div>
+              <div class="footer_icon_text">
+                <h2>1234, Parkstreet Avenue<br>Newyork City, America.</h2>
+              </div>
+              
+              
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer_item">
+              <div class="footer_item_icon_main">
+                <div class="footer_item_icon">
+                  <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                  
+                </div>
+              </div>
+              <div class="footer_icon_text">
+                <h2>1234, Parkstreet Avenue<br>Newyork City, America.</h2>
+              </div>
+              
+              
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer_item">
+              <div class="footer_item_icon_main">
+                <div class="footer_item_icon">
+                  <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                  
+                </div>
+              </div>
+              <div class="footer_icon_text">
+                <h2>1234, Parkstreet Avenue<br>Newyork City, America.</h2>
+              </div>
+              
+              
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer_item_last text-center">
+              <div class="footer_item_icon_main">
+                <div class="footer_item_icon">
+                  <a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a>
+                  
+                </div>
+              </div>
+              <div class="footer_icon_text">
+                <h2>1234, Parkstreet Avenue<br>Newyork City, America.</h2>
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row ">
+            <div class="col-lg-7 m-auto">
+              <div class="follow_us">
+                <h2>Follow Us</h2>
+                <ul>
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+    <div class="footer_bottom">
+      <div class="container">
+        <div class="row ">
+          <div class="col-lg-7 m-auto">
+            <div class="footer_last">
+              <h3>Copyright &copy; 2017.All rights reserved by <span>HUNT.</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+     
 
 
     
@@ -314,9 +1121,13 @@
 
 
     
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/venobox.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/typed.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
