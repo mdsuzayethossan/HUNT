@@ -12,8 +12,8 @@
 
 
 
-
- /* @media (min-width:1200px) {
+/* 
+  @media (min-width:1200px) {
     
   
     .service_head .sup_2 {
@@ -25,16 +25,17 @@
     } 
     
     .aboutitem_3 {
+        margin-top: 111px;
         
         margin-left: 21px;
     }
     .aboutitem_2 {
       
-        margin: 115px 21px 0 0;
+        margin: 112px 21px 0 0;
        
     }
 
- } */
+ }  */
 
  @media (min-width:992px) and (max-width:1199px) {
     .navbar-expand-lg .navbar-nav .nav-item {
@@ -59,12 +60,12 @@
         z-index: -1;
     }
     .aboutitem_3 {
-        margin-top: 37px;
+        margin-top: 25px;
         margin-left: -9px;
     }
     .aboutitem_2 {
        
-        margin: 25px -7px 0 0;
+        margin: 15px -7px 0 0;
         
     }
     .about-circle {
@@ -72,10 +73,8 @@
         margin-top: 59px;
     }
     .aboutitem_4 {
-        
-        margin-top: 10px;
-        
-    } 
+        margin-top: 19px;
+    }
 
     /*====== Service Responsive Parts goes here =============*/
   
@@ -359,11 +358,9 @@
         
     }
     #testimonial {
+        padding: 70px 0 70px 0;
         clip-path: none;
-        
-    }
-    #testimonial {
-        padding: 70px 0 90px 0;
+        margin-top: -20px;
     }
     .testimonial_details {
         padding: 30px 36px;
@@ -714,11 +711,9 @@
         
     }
     #testimonial {
+        padding: 70px 0 70px 0;
         clip-path: none;
-        
-    }
-    #testimonial {
-        padding: 70px 0 90px 0;
+        margin-top: -20px;
     }
     .testimonial_details {
         padding: 30px 36px;
@@ -1061,7 +1056,7 @@
 
 
 
-
+    /*Testimonial part responsive goes here*/
     .testimonial-details_item p {
         padding: 0;
     }
@@ -1073,11 +1068,9 @@
         
     }
     #testimonial {
+        padding: 70px 0 70px 0;
         clip-path: none;
-        
-    }
-    #testimonial {
-        padding: 70px 0 90px 0;
+        margin-top: -20px;
     }
     .testimonial_details {
         padding: 30px 36px;
